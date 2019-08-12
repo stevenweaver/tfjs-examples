@@ -55,7 +55,7 @@ export class SnakeGameAgent {
         createDeepQNetwork(game.height,  game.width, NUM_ACTIONS);
     // Freeze taget network: it's weights are updated only through copying from
     // the online network.
-    this.targetNetwork.trainable = false;
+    //this.targetNetwork.trainable = false;
 
     this.optimizer = tf.train.adam(config.learningRate);
 
